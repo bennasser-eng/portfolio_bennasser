@@ -1,353 +1,80 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Bennasser | AI Engineer - ENSIMAG</title>
-    <meta name="description" content="Portfolio d'Ahmed Bennasser, étudiant ingénieur à l'ENSIMAG spécialisé en intelligence artificielle, machine learning et data science.">
-    <meta name="author" content="Ahmed Bennasser">
-    <meta property="og:title" content="Ahmed Bennasser | AI Engineer">
-    <meta property="og:description" content="Portfolio professionnel d'un étudiant ingénieur spécialisé en intelligence artificielle.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/profil.jpg">
-    <meta property="og:locale" content="fr_FR">
-    <meta name="theme-color" content="#111827">
-    <link rel="icon" href="images/brand.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Ahmed Bennasser | Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav">
-            <a href="#home" class="logo" aria-label="Accueil">
-                <img src="images/brand.png" alt="Ahmed Bennasser">
-                <span>Ahmed Bennasser</span>
-            </a>
+            <a href="index.html" class="logo">Ahmed Bennasser</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="index-en.html">EN</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projets.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="competences.html">Skills</a></li>
+                    <li><a href="formation.html">Education</a></li>
                 </ul>
             </nav>
-            <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
         </div>
     </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-text reveal">
-                    <h1>Ahmed Bennasser</h1>
-                    <p class="hero-title">Élève-ingénieur Ensimag &amp; Master MSIAM | Spécialisé en LLM, NLP et Machine Learning.</p>                   
-                    <p>Je développe des solutions d'intelligence artificielle allant du Deep Learning et de la vision par ordinateur aux modèles génératifs et aux systèmes multimodaux.</p>
-                    <p>Mon objectif est de concevoir des modèles robustes et des pipelines reproductibles pour des applications scientifiques et industrielles.</p>
-                    <p class="hero-title">Je recherche un stage de fin d'études (PFE) de 5 à 6 mois débutant en janvier 2027.</p>
-                    <div class="button-row">
-                        <a href="#projects" class="button button-primary"><i class="fa-solid fa-layer-group"></i>Voir les projets</a>
-                        <a href="docs/mon_cv_français.pdf" class="button button-secondary" download><i class="fa-solid fa-download"></i>CV Français</a>
-                        <a href="docs/mon_cv_english.pdf" class="button button-secondary" download><i class="fa-solid fa-download"></i>CV anglais</a>
-                    </div>
-                    <div class="hero-links">
-                        <a href="https://github.com/bennasser-eng" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
-                        <a href="https://www.linkedin.com/in/ahmed-bennasser-a6194730b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                    </div>
-                </div>
-                <aside class="profile-card reveal">
-                    <img src="images/profil.jpg" alt="Ahmed Bennasser">
-                    <div class="profile-content">
-                        <div class="stats">
-                            <span><strong>ENSIMAG</strong>Formation</span>
-                            <span><strong>Grenoble</strong>France</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-      
-        <section id="projects" class="section section-soft">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Projets</span>
-                    <h3>Une sélection de projets académiques et personnels.</h3>
-                </div>
-                <div class="projects-grid">
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Computer Vision</span>
-                            <h3>Deep Learning sur radiographies pulmonaires</h3>
-                            <p>Classification de plus de 20 000 radiographies à l'aide de réseaux de neurones convolutifs, du transfer learning et de techniques d'augmentation de données.</p>
-                            <ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>Pandas</li></ul>
-                            <a href="https://github.com/bennasser-eng/Covid_DeepLearning_personnel" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">NLP</span>
-                            <h3>Climate Sentiment Analyzer</h3>
-                            <p>Analyse automatique de sentiments sur des discussions liées au changement climatique à l'aide de modèles de langage modernes.</p>
-                            <ul class="tags"><li>Python</li><li>Transformers</li><li>BERT</li><li>LSTM</li></ul>
-                            <a href="https://github.com/bennasser-eng/Sentiment-Analysis" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Compiler</span>
-                            <h3>Compilateur Deca</h3>
-                            <p>Développement d'un compilateur pour un sous-ensemble du langage Java, avec analyse lexicale, syntaxique, sémantique et génération de code.</p>
-                            <ul class="tags"><li>Java</li><li>ANTLR</li><li>Maven</li><li>Jacoco</li></ul>
-                            <a href="https://github.com/bennasser-eng/DECAC" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Database</span>
-                            <h3>Système d'information pour une épicerie spécialisée</h3>
-                            <p>Conception d'une base de données et d'une application Java permettant la gestion de produits locaux et en vrac, avec validation des principales fonctionnalités.</p>
-                            <ul class="tags"><li>Oracle</li><li>SQL</li><li>Java</li><li>Adminer</li></ul>
-                            <a href="https://github.com/bennasser-eng/Projet_Base_De_Donnees" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Hardware</span>
-                            <h3>Processeur RISC-V et compilateur C vers assembleur</h3>
-                            <p>Implémentation d'un processeur RISC-V sur FPGA, accompagnée d'un compilateur permettant la traduction automatisée de programmes en C.</p>
-                            <ul class="tags"><li>VHDL</li><li>C</li><li>Assembleur</li><li>FPGA</li></ul>
-                            <a href="https://github.com/bennasser-eng/Hardware-Software-Design-with-RISC-V-FPGA" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Scientific Computing</span>
-                            <h3>Étude comparative des courbes de Bézier</h3>
-                            <p>Comparaison des courbes de Bézier, des B-Splines et d'autres méthodes d'interpolation au travers de visualisations numériques.</p>
-                            <ul class="tags"><li>Python</li><li>NumPy</li><li>Matplotlib</li><li>LaTeX</li></ul>
-                            <a href="https://github.com/bennasser-eng/Projet-courbes-de-Beziers" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Software Engineering</span>
-                            <h3>Bibliothèque graphique en C</h3>
-                            <p>Développement d'une bibliothèque destinée à la création d'interfaces graphiques avec gestion d'événements et architecture modulaire.</p>
-                            <ul class="tags"><li>C</li><li>Git</li><li>CLion</li><li>GUI</li></ul>
-                            <a href="https://github.com/bennasser-eng/Graphical-Interface-User-Library-in-C" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Statistics</span>
-                            <h3>Modélisation statistique des chars allemands</h3>
-                            <p>Étude probabiliste basée sur des simulations et des analyses statistiques appliquées à un problème historique.</p>
-                            <ul class="tags"><li>R</li><li>Statistiques</li><li>LaTeX</li><li>Visualisation</li></ul>
-                            <a href="https://github.com/bennasser-eng/Mod-lisation-statistique-des-chars-allemands-dans-la-deuxieme-Guerre-mondiale" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                    <article class="project-card reveal">
-                        <div class="project-content">
-                            <span class="badge">Object-Oriented Programming</span>
-                            <h3>Simulation de systèmes multiagents</h3>
-                            <p>Développement d'une application graphique permettant de simuler plusieurs modèles de systèmes multiagents, notamment le jeu de la vie de Conway, le modèle de Schelling et des mouvements d'essaims.</p>
-                            <ul class="tags"><li>Java</li><li>POO</li><li>Tests</li></ul>
-                            <a href="https://github.com/bennasser-eng/Simulation-Orient-e-Objet-de-syst-mes-multiagents" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Expérience</span>
-                    <h3>Expériences en recherche et développement.</h3>
-                </div>
-                <div class="timeline">
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">Juin - juillet 2026</span>
-                        <div class="timeline-card">
-                            <h3>Stage assistant ingénieur - Sélection de variables pour la classification de données microbiomiques</h3>
-                            <p class="meta">LIG, équipe APTIKAL - TIMC, équipe TrEE-compbio</p>
-                            <p class="role">Bioinformatique et apprentissage automatique</p>
-                            <p>Réimplémentation et évaluation critique de l'approche Hierarchical Feature Engineering (HFE) pour exploiter la structure taxonomique des données microbiomiques.</p>
-                            <p>Proposition et implémentation de Statistical Feature Engineering (SFE), une méthode de sélection de variables combinant agrégation taxonomique, tests statistiques, contrôle du taux de faux positifs et filtrage de redondance.</p>
-                            <p>Conception d'un protocole expérimental rigoureux avec validation croisée imbriquée, validation inter-études, analyse de robustesse au bruit et étude de l'impact de la haute dimensionnalité.</p>
-                            <p>Conclure que SFE est efficace pour la classification de microbiomes ou le nombre de bactéries dans un échantillon depasse le nombre d'exemples .</p> 
-                            <ul class="tags"><li>Bioinformatique</li><li>Microbiome</li><li>Machine Learning</li><li>Scikit-learn</li><li>Scipy</li><li>Zotero</li><li>Feature Selection</li><li>Nested CV</li></ul>
-                            <a href="docs/Rapport_microbiome.pdf" target="_blank" class="text-link"><i class="fa-solid fa-file-pdf"></i>Voir le rapport</a>
-                            <a href="https://github.com/bennasser-eng/microbiome_research" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div> 
-                    </article>
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">Fevrier - Mai 2026</span>
-                        <div class="timeline-card">
-                            <h3>SEMA : A Multimodal Framework for Semantic Alignment and Controlled Pictogram Generation</h3>
-                            <p class="meta">Laboratoire LIG (équipe Getalp)- UGA</p>
-                            <p class="role">Recherche en intelligence artificielle multimodale (Géneration de pictogrames conditionés par text)</p>
-                            <p>Évaluation d'un modèle de langage sur des benchmarks Named Entity Recognition (NER) et développement d'un pipeline de génération de pictogrammes conditionné par des représentations sémantiques extraites de textes.</p>
-                            <p>Mise en place d'un système de validation pour contrôler la qualité des générations produites.</p>
-                            <ul class="tags"><li>NLP</li><li>Diffusion Models</li><li>Generative Models</li><li>JEPA</li><li>LoRA</li><li>Multimodal AI</li></ul>
-                            <a href="docs/SEMA-PIPELINE.pdf" target="_blank" class="text-link"><i class="fa-solid fa-file-pdf"></i>Voir l'article de recherche</a>
-                        </div>
 
-                    </article>
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">Décembre 2025</span>
-                        <div class="timeline-card">
-                            <h3>GenHack4 - Modélisation des Îlots de Chaleur Urbains</h3>
-                            <p class="meta">Latent-Space</p>
-                            <p class="role">Hackathon international (X Polytechnique, BNP Paribas)</p>
-                            <p>Développement d'un pipeline de downscaling en machine learning permettant de passer d'une résolution spatiale de 30 km à 1 km pour la cartographie des îlots de chaleur urbains.</p>
-                            <p>Analyse de l'impact potentiel sur les populations vulnérables.</p>
-                            <ul class="tags"><li>Machine Learning</li><li>Python</li><li>Data Visualization</li><li>Jupyter</li></ul>
-                            <a href="https://github.com/bennasser-eng/GenHack-Latent-space-generative-modeling" target="_blank" rel="noopener noreferrer" class="text-link"><i class="fa-brands fa-github"></i>GitHub</a>
-                        </div>
-                    </article>
+    <main class="container">
+        <!-- Presentation -->
+        <section class="hero-box">
+            <div class="hero-main">
+                <h1>Ahmed Bennasser</h1>
+                <p class="hero-subtitle">Engineering Student at Ensimag &amp; Master MSIAM</p></p>
+                <div class="subtitle-tags">
+                    <span class="badge">Machine Learning</span>
+                    <span class="badge">Statistical Learning</span>
+                    <span class="badge">NLP &amp; LLMs</span>
+                    <span class="badge">Generative AI</span>
+                </div><div class="hero-desc">
+                 <p>I develop artificial intelligence solutions ranging from deep learning to generative models, LLMs, and multimodal systems, with hands-on experience in fine-tuning, Transformers, RAG, and model evaluation to build robust, reproducible pipelines for scientific and industrial applications.</p>
+            </div>
+                <div class="pfe-notice">
+                    <strong>Internship Search:</strong> I am looking for a 5 to 6-month end-of-study internship (PFE) starting early February 2027.
                 </div>
             </div>
-        </section>
-        <section id="skills" class="section section-soft">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Compétences</span>
-                    <h3>Technologies et domaines techniques.</h3>
-                </div>
-                <div class="skills-grid">
-                    <article class="skill-card reveal"><h3><i class="fa-solid fa-code"></i>Langages de programmation</h3><ul class="tags"><li>Python</li><li>C / C++</li><li>Java</li><li>SQL</li><li>R</li><li>VHDL</li><li>Assembly</li><li>Freefem</li></ul></article>
-                    <article class="skill-card reveal"><h3><i class="fa-solid fa-brain"></i>Intelligence artificielle</h3><ul class="tags"><li>Deep Learning</li><li>Pythorch</li><li>Machine Learning</li><li>NLP</li><li>Computer Vision</li><li>Scikit-learn</li><li>TensorFlow</li></ul></article>
-                    <article class="skill-card reveal"><h3><i class="fa-solid fa-chart-line"></i>Data science</h3><ul class="tags"><li>Pandas</li><li>NumPy</li><li>Analyse statistique</li><li>Visualisation de données</li><li>Jupyter</li></ul></article>
-                    <article class="skill-card reveal"><h3><i class="fa-solid fa-toolbox"></i>Outils et environnements</h3><ul class="tags"><li>Git / GitHub</li><li>Linux / Unix</li><li>Docker</li><li>Jupyter</li><li>LaTeX</li><li>Oracle</li><li>Qiskit</ul></article>
-                </div>
-                <div class="languages reveal">
-                    <h3>Langues</h3>
-                    <div class="language-grid">
-                        <div><strong>Arabe</strong><span>Langue maternelle</span></div>
-                        <div><strong>Français</strong><span>Courant (C1)</span></div>
-                        <div><strong>Anglais</strong><span>Professionnel (B2+)</span></div>
-                    </div>
-                </div>
+        
+            <div class="hero-avatar">
+                <img src="images/profil.jpg" alt="Ahmed Bennasser">
+                <div class="avatar-meta">ENSIMAG • Grenoble, France</div>
             </div>
         </section>
-        <section id="education" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Formation</span>
-                    <h3>Parcours académique.</h3>
-                </div>
-                <div class="timeline compact">
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">2026 - 2027</span>
-                        <div class="timeline-card">
-                            <h3>Master 2 MSIAM (MSc in Industrial and Applied Mathematics &amp IA)</h3>
-                            <p class="meta">Université Grenoble Alpes &amp; Grenoble INP</p>
-                            <p>Parcours recherche axé sur l'apprentissage statistique (ML), la modélisation et les fondations mathématiques de l'IA.</p>
-                            <ul class="tags">
-                                <li>Machine Learning</li>
-                                <li>Deep Learning</li>
-                                <li>IA générative</li>
-                                <li>Quantum computing &amp; Dynamics</li>
-                                <li>Statistiques avancées</li>
-                                <li>Data science seminars &amp projects</li>
-                            </ul>
-                        </div>
-                    </article>
 
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">2024 - 2027</span>
-                        <div class="timeline-card">
-                            <h3>Diplôme d'Ingénieur en Informatique et mathématique appliquée</h3>
-                            <p class="meta">Grenoble INP - Ensimag</p>
-                            <p>Formation d'ingénieur d'excellence associant informatique fondamentale, Modélisation mathématique &amp; simulation, systèmes et algorithmique avancée.</p>
-                            <ul class="tags">
-                                <li>Algorithmique</li>
-                                <li>Génie logiciel</li>
-                                <li>Compilation</li>
-                                <li>Modélisation mathématique</li>
-                                <li>Simulation</li>
-                                <li>Statistiques &amp; Machine Learning</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">2022 - 2024</span>
-                        <div class="timeline-card">
-                            <h3>Classe Préparatoire aux Grandes Écoles</h3>
-                            <p class="meta">MP - Lycée Mohammed 6 d'Excellence LYDEX</p>
-                            <p>Formation intensive en mathématiques, physique et informatique, préparation aux concours des grandes écoles d'ingénieurs.</p>
-                            <ul class="tags"><li>Mathématiques avancées</li><li>Physique</li><li>Algorithmique</li></ul>
-                        </div>
-                    </article>
-                    <article class="timeline-item reveal">
-                        <span class="timeline-date">2022</span>
-                        <div class="timeline-card">
-                            <h3>Baccalauréat Scientifique</h3>
-                            <p class="meta">Sciences Mathématiques A</p>
-                            <p>Mention Très Bien.</p>
-                            <ul class="tags"><li>Mathématiques</li><li>Physique-Chimie</li></ul>
-                        </div>
-                    </article>
+        <!-- Integrated Contact Block -->
+        <section class="contact-card">
+            <div class="contact-items">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:bennasser.ahmed83@gmail.com">bennasser.ahmed83@gmail.com</a>
                 </div>
-            </div>
-        </section>
-        <section id="certificates" class="section section-soft">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Certifications</span>
-                    <h3>Formations complémentaires.</h3>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33744199412">+33 7 44 19 94 12</a>
                 </div>
-                <div class="certificates-grid">
-                    <article class="certificate-card reveal"><i class="fa-solid fa-brain"></i><div><h3>Neural Networks & Deep Learning</h3><p>DeepLearning.ai (Coursera)</p></div></article>
-                    <article class="certificate-card reveal"><i class="fa-solid fa-atom"></i><div><h3>Quantum Computing Fundamentals</h3><p>IBM Quantum</p></div></article>
-                    <article class="certificate-card reveal"><i class="fa-solid fa-chart-line"></i><div><h3>Machine Learning Specialist</h3><p>Kaggle</p></div></article>
-                    <article class="certificate-card reveal"><i class="fa-solid fa-code"></i><div><h3>Python Programming</h3><p>Kaggle</p></div></article>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Grenoble, France</span>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section section-soft">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Contact</span>
-                    <h2>Échangeons sur votre projet</h2>
-                </div>
-                <div class="contact-content reveal">
-                    <p class="contact-pitch">
-                        Actuellement en quête de mon stage de fin d'études (PFE) de 5 à 6 mois dès janvier 2027, je suis joignable par e-mail ou téléphone pour échanger sur vos besoins en IA et machine learning.
-                    </p>
-                    <div class="contact-links-inline">
-                        <a href="mailto:bennasser.ahmed83@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>bennasser.ahmed83@gmail.com
-                        </a>
-                        <span class="separator">•</span>
-                        <a href="tel:+33744199412">
-                            <i class="fa-solid fa-phone"></i>+33 7 44 19 94 12
-                        </a>
-                        <span class="separator">•</span>
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>Grenoble, France
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <div class="container footer-content">
-            <strong>Ahmed Bennasser</strong>
-            <p>AI Engineer - Data Science - Machine Learning</p>
-            <p class="copyright">© 2026 Ahmed Bennasser. Tous droits réservés.</p>
+        <!-- Action Buttons -->
+        <div class="btn-group">
+            <a href="projets.html" class="btn btn-primary"><i class="fa-solid fa-layer-group"></i>View Projects</a>
+            <a href="docs/mon_cv_français.pdf" class="btn btn-dark" download><i class="fa-solid fa-file-pdf"></i>French CV</a>
+            <a href="docs/mon_cv_english.pdf" class="btn btn-dark" download><i class="fa-solid fa-file-pdf"></i>English CV</a>
+            <a href="https://github.com/bennasser-eng" class="btn btn-dark" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/ahmed-bennasser-a6194730b/" class="btn btn-dark" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
         </div>
-    </footer>
-    <button class="scroll-top" type="button" aria-label="Retour en haut">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-    <script src="js/script.js"></script>
+    </main>
+
 </body>
 </html>
