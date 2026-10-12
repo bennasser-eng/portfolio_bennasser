@@ -34,22 +34,26 @@
             <article class="project-h-card">
                 <div class="project-h-info">
                     <div class="project-h-header">
-                        <h2>AgriGuard-RAG — RAG System for Agricultural Regulation</h2>
-                        <span class="badge">RAG | Agents &amp; NLP | LLM</span>
+                        <h2>AgriGuard-RAG — Assistant Réglementaire Phytosanitaire</h2>
+                        <span class="badge">Agentic RAG | NLP | LLM</span>
                     </div>
-                    <p>Development of a RAG system for regulatory queries on plant protection products, with 5,277 structured and indexed documents.</p>
+                    <p>Système RAG hybride et agentique pour l'interrogation de la réglementation phytosanitaire française (E-Phy), indexant 5 277 fiches officielles.</p>
                     <ul>
-                        <li>Design of a hybrid router combining heuristic rules and TF-IDF + Logistic Regression classification to dynamically direct queries.</li>
-                        <li>Implementation of hybrid retrieval combining semantic embeddings (Sentence-Transformers), BM25, and metadata filtering with Qdrant.</li>
-                        <li>Planned extension to an agentic architecture to handle complex queries through reasoning workflows and specialized tools such as LangChain.</li>
+                        <li><strong>Routage d'intention dynamique :</strong> Classification hybride (heuristiques + TF-IDF / Logistic Regression) pour aiguiller les requêtes simples ou complexes.</li>
+                        <li><strong>Recherche hybride &amp; Fusion RRF :</strong> Indexation vectorielle sur <em>Qdrant Cloud</em> associant embeddings denses (FastEmbed) et sparse (BM25) avec reclassement par <em>Reciprocal Rank Fusion</em> et filtrage par métadonnées (AMM, culture).</li>
+                        <li><strong>Agent de raisonnement (Agentic RAG) :</strong> Décomposition automatique de requêtes complexes en sous-problèmes indépendants, extraction parallèle et synthèse sans hallucination via l'API <em>Groq Cloud</em>.</li>
+                        <li><strong>Mise en production :</strong> Déploiement cloud sécurisé (gestion des secrets, gestion du cache mémoire et interface de dialogue interactive).</li>
                     </ul>
                     <ul class="tech-tags">
-                        <li>Python</li><li>Scikit-learn</li><li>Qdrant</li><li>BGE</li><li>BM25</li><li>RAG</li><li>Information Retrieval</li><li>LangChain</li><li>LLM</li><li>Prompting</li>
+                        <li>Python</li><li>Qdrant Cloud</li><li>Groq API</li><li>FastEmbed</li><li>BM25</li><li>Scikit-learn</li><li>RRF Fusion</li><li>Streamlit</li><li>Agentic RAG</li>
                     </ul>
                 </div>
                 <div class="project-h-btn">
+                    <a href="https://agriguard-rag-a.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo (v1)
+                    </a>
                     <a href="https://github.com/bennasser-eng/AgriGuard-RAG" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        <i class="fa-brands fa-github"></i>GitHub
+                        <i class="fa-brands fa-github"></i> GitHub
                     </a>
                 </div>
             </article>
